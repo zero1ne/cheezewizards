@@ -6,6 +6,11 @@
 
 pragma solidity >=0.5.6 <0.6.0;
 
+import "./AddressPayable.sol";
+import "./WizardPresaleNFT.sol";
+import "./WizardPresaleInterface.sol";
+import "./WizardConstants.sol";
+
 /// @title WizardPresale - Making Cheeze Wizards available for sale!
 /// @notice Allows for the creation and sale of Cheeze Wizards before the final tournament
 ///         contract has been reviewed and released on mainnet. There are three main types

@@ -2,6 +2,11 @@
 
 pragma solidity >=0.5.6 <0.6.0;
 
+import "./introspection/ERC165.sol";
+import "./token/ERC721/IERC721.sol";
+import "./token/ERC721/IERC721Receiver.sol";
+import "./utils/Address.sol";
+
 /**
  * @title WizardPresaleNFT
  * @notice The basic ERC-721 functionality for storing the presale Wizard NFTs.
