@@ -9,8 +9,11 @@ externalConfig.networks.ropsten = {
 
 module.exports = {
   ...externalConfig,
+  /*
   from: {
     mnemonic: MNEMONIC,
     index: 0
   }
+  */
+  from: 'INPUT_YOUR_KLAYTN_PRIVATE_KEY'
 };

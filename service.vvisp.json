@@ -1,27 +1,22 @@
 {
-  "serviceName": "Haechi",
+  "serviceName": "CheezeWizards",
   "variables" : {
-    "varName": "constant"
+    "STARTING_COST": "100",
+    "COST_INCREMENT": "100",
+    "EXCLUSIVE_COUNT": "100",
+    "START_BLOCK": "2838500",
+    "DURATION": "1000000"
   },
   "contracts": {
     "ContractKeyName1": {
-      "path": "path/to/your/contract/Contract.sol",
+      "path": "./contracts/WizardPresale.sol",
       "constructorArguments": [
-        "${contracts.ContractKeyName1.address}",
-        "${variables.varName}"
-      ],
-      "initialize": {
-        "functionName": "initialize",
-        "arguments": ["argument1", "argument2"]
-      }
-    },
-    "ContractKeyName2": {
-      "upgradeable": true,
-      "path": "path/to/your/contract/ContractV0.sol",
-      "initialize": {
-        "functionName": "initialize",
-        "arguments": ["argument1", "argument2"]
-      }
+        "${variables.STARTING_COST}",
+        "${variables.COST_INCREMENT}",
+        "${variables.EXCLUSIVE_COUNT}",
+        "${variables.START_BLOCK}",
+        "${variables.DURATION}"
+      ]
     }
   }
 }

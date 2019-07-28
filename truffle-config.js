@@ -1,9 +1,16 @@
 module.exports = {
   networks: {
+    /*
     development: {
       host: 'localhost',
       port: 8545,
       network_id: '*' // eslint-disable-line camelcase
+    },
+    */
+    development: {
+      platform: 'klaytn',
+      url: 'https://api.baobab.klaytn.net:8651',
+      gasLimit: 10000000, // increase if you need
     },
     coverage: {
       host: 'localhost',
